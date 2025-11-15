@@ -26,8 +26,8 @@ const Skills = () => {
     'Debugging',
     'Unit Testing',
     'Deployment',
-    'React UI',
-    'Angular UI'
+    'React',
+    'Angular'
   ];
 
   return (

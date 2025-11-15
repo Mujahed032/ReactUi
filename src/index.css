@@ -22,4 +22,16 @@ code {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure all sections are visible on mobile */
+section {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }

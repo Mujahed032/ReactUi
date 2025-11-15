@@ -62,14 +62,44 @@
 @media (max-width: 768px) {
   .about {
     padding: 3rem 0;
+    min-height: auto;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
   }
   
   .section-title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .about-content {
     font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .about-content p {
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 2.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content {
+    font-size: 0.95rem;
   }
 }
 

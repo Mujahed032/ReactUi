@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -30,10 +31,49 @@
   color: #2c3e50;
   cursor: pointer;
   transition: color 0.3s ease;
+  z-index: 1001;
 }
 
 .logo:hover {
   color: #3498db;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #2c3e50;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .nav-menu {
@@ -50,6 +90,7 @@
   font-weight: 500;
   transition: color 0.3s ease;
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-menu li a:hover {
@@ -72,13 +113,79 @@
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    gap: 1rem;
-    font-size: 0.9rem;
-  }
-  
   .nav-container {
     padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-menu li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    display: block;
+  }
+
+  .nav-menu li a::after {
+    display: none;
+  }
+}
+
+.menu-backdrop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu {
+    width: 80%;
+    padding: 4rem 1.5rem 2rem;
   }
 }
 

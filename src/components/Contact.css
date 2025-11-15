@@ -83,11 +83,69 @@
 @media (max-width: 768px) {
   .contact {
     padding: 3rem 0;
+    min-height: auto;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
   }
   
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .contact-item {
+    gap: 0.4rem;
+  }
+  
+  .contact-item strong {
+    font-size: 1rem;
+  }
+  
+  .contact-links h3 {
+    font-size: 1.3rem;
+  }
+  
+  .social-link {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .contact-content {
+    gap: 1.5rem;
+  }
+  
+  .contact-info {
+    gap: 1.2rem;
+  }
+  
+  .contact-item strong {
+    font-size: 0.95rem;
+  }
+  
+  .contact-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .social-links {
+    gap: 0.8rem;
+  }
+  
+  .social-link {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
   }
 }
 

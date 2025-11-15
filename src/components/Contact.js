@@ -58,7 +58,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="social-link website"
               >
-                Portfolio Website
+                Website
               </a>
             </div>
           </div>

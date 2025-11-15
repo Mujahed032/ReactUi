@@ -69,6 +69,11 @@
 @media (max-width: 768px) {
   .education {
     padding: 3rem 0;
+    min-height: auto;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
   }
   
   .education-item {
@@ -81,6 +86,50 @@
   
   .education-institution {
     font-size: 1.1rem;
+  }
+  
+  .education-meta {
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .education-details li {
+    padding: 0.6rem 0;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 2.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .education-item {
+    padding: 1.2rem;
+  }
+  
+  .education-degree {
+    font-size: 1.3rem;
+  }
+  
+  .education-institution {
+    font-size: 1rem;
+  }
+  
+  .education-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .education-details li {
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    font-size: 0.9rem;
   }
 }
 

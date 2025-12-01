@@ -15,8 +15,8 @@ const Hero = () => {
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
             <a href="#contact" className="btn btn-secondary">Get In Touch</a>
-            <a href="#resume" className="btn btn-secondary" onClick={(e) => { e.preventDefault(); window.open('/resume.pdf', '_blank'); }}>View Resume</a>
-            <a href="/resume.pdf" download className="btn btn-secondary">Download Resume</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">View Resume</a>
+            <a href="/resume.pdf" download="Md_Mujahed_Ul_Islam_Resume.pdf" className="btn btn-secondary">Download Resume</a>
           </div>
           <div className="hero-code">
             <pre>{`public class Developer {

@@ -18,14 +18,14 @@ const Projects = () => {
       ]
     },
     {
-      name: 'RevalReason',
-      description: 'A high-performance, dynamically functional system built on .NET 6, following a robust three-tier architecture for scalability. ADO.NET efficiently manages database interactions, Serilog ensures comprehensive logging, and dynamic functionalities cater to evolving requirements. Key features include modular architecture, detailed pagination support, and adherence to industry best practices.',
-      technologies: ['.NET 6', 'ADO.NET', 'Serilog', 'Three-Tier Architecture', 'C#'],
+      name: 'CoreFlow',
+      description: 'ADO.NET efficiently manages database interactions, Serilog ensures comprehensive logging, and dynamic functionalities cater to evolving requirements. This ASP.NET Core-based system excels in handling dynamic data processing, encapsulating core business logic, and implementing structured logging. Key features include a modular three-tier architecture, detailed pagination support, and adherence to industry best practices. The RevalReason project, built on .NET 6, follows a robust three-tier architecture for scalability - a high-performance, dynamically functional system designed for optimal management and maintenance.',
+      technologies: ['.NET 6', 'ADO.NET', 'Serilog', 'Three-Tier Architecture', 'ASP.NET Core', 'C#'],
       features: [
         'Three-tier architecture',
         'Comprehensive logging with Serilog',
         'Dynamic data processing',
-        'Optimized database interactions',
+        'Optimized database interactions with ADO.NET',
         'Modular design',
         'Pagination support'
       ]

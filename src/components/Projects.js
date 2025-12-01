@@ -7,6 +7,7 @@ const Projects = () => {
       name: 'Humsafar Mubarak',
       description: 'A fully functional matrimonial platform with 500+ live users and paid subscription features. Built with enterprise-grade architecture including user profiles, advanced search filters, real-time messaging, and secure payment integration. Hosted on Render using Dockerfile with Supabase PostgreSQL backend.',
       link: 'https://www.humsafarmubarak.com/Index',
+      logo: '/humsafar-logo.png',
       technologies: ['C#', 'ASP.NET Core', 'Razor Pages', 'PostgreSQL', 'Docker', 'Supabase'],
       features: [
         '500+ active user profiles',
@@ -53,6 +54,11 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
+              {project.logo && (
+                <div className="project-logo-container">
+                  <img src={project.logo} alt={`${project.name} logo`} className="project-logo" onError={(e) => { e.target.style.display = 'none'; }} />
+                </div>
+              )}
               <h3 className="project-name">{project.name}</h3>
               <p className="project-description">{project.description}</p>
               {project.features && (

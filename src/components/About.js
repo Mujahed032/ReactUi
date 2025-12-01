@@ -15,9 +15,8 @@ const About = () => {
             new technologies and delivers verifiable results.
           </p>
           <p>
-            Currently working as a <strong>Software Engineer at Caliber Technologies</strong>, I've developed and maintained responsive web applications, 
-            designed RESTful APIs, and led microservices architecture implementations. I've optimized application performance through caching strategies, 
-            database indexing, and code refactoring to ensure high-speed functionality and scalability.
+            I've developed and maintained responsive web applications, designed RESTful APIs, and led microservices architecture implementations. 
+            I've optimized application performance through caching strategies, database indexing, and code refactoring to ensure high-speed functionality and scalability.
           </p>
           <p>
             <strong>Live Projects I've Built & Run:</strong>
@@ -25,9 +24,6 @@ const About = () => {
           <ul className="about-projects-list">
             <li>
               <strong>humsafarmubarak.com</strong> - Matrimonial platform with 500+ active profiles, C# backend + Razor Pages, PostgreSQL, hosted on Render with Docker
-            </li>
-            <li>
-              <strong>mujahed-portfolio.onrender.com</strong> - Personal portfolio website showcasing projects and skills
             </li>
           </ul>
           <p>
@@ -45,7 +41,7 @@ const About = () => {
               <div className="stat-label">Active Profiles</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">3+</div>
+              <div className="stat-number">2</div>
               <div className="stat-label">Live Projects</div>
             </div>
             <div className="stat-item">

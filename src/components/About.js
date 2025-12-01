@@ -5,29 +5,54 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="section-title">Profile</h2>
+        <h2 className="section-title">About Me</h2>
+        <p className="section-subtitle">Learn more about my journey, experience, and what drives me as a software engineer</p>
         <div className="about-content">
+          <h3 className="about-heading">Building the Future, One Line at a Time</h3>
           <p>
-            Experienced Full Stack Developer with 5 years of expertise in <strong>ASP.NET MVC</strong>, 
-            <strong> ASP.NET Core</strong>, and <strong>Entity Framework</strong>. Demonstrated success in building 
-            scalable, maintainable web applications and RESTful APIs that integrate seamlessly across 
-            back-end and front-end technologies. Skilled in architecting resilient systems, implementing 
-            complex business logic, and ensuring data accuracy and reliability.
+            I'm a <strong>.NET Full Stack Developer</strong> with <strong>5+ years of comprehensive experience</strong> in the software development lifecycle, 
+            specializing in building and deploying production-ready applications that serve real users. I'm a proven <strong>self-learner</strong> who masters 
+            new technologies and delivers verifiable results.
           </p>
           <p>
-            Proficient with <strong>CI/CD practices</strong>, including version control (Git), automated testing, 
-            and deployment pipelines for efficient, high-quality releases.
+            Currently working as a <strong>Software Engineer at Caliber Technologies</strong>, I've developed and maintained responsive web applications, 
+            designed RESTful APIs, and led microservices architecture implementations. I've optimized application performance through caching strategies, 
+            database indexing, and code refactoring to ensure high-speed functionality and scalability.
           </p>
           <p>
-            Developed and deployed a live project — <a href="https://www.humsafarmubarak.com/Index" target="_blank" rel="noopener noreferrer" className="project-link">www.humsafarmubarak.com</a>, 
-            a matrimony profile management system hosted on Render using a Dockerfile, with a Supabase 
-            PostgreSQL backend. The platform is currently running successfully as a matchmaking service, 
-            generating steady business growth and managing over <strong>500 active user profiles</strong> in real time. 
-            We have established a systematic business process, supported by a team of 3–4 employees dedicated 
-            to sales and lead generation, contributing to consistent revenue growth and client engagement. 
-            This project showcases strong hands-on experience in modern cloud hosting, containerization, 
-            database integration, and scalable business-oriented web application development.
+            <strong>Live Projects I've Built & Run:</strong>
           </p>
+          <ul className="about-projects-list">
+            <li>
+              <strong>humsafarmubarak.com</strong> - Matrimonial platform with 500+ active profiles, C# backend + Razor Pages, PostgreSQL, hosted on Render with Docker
+            </li>
+            <li>
+              <strong>mujahed-portfolio.onrender.com</strong> - Personal portfolio website showcasing projects and skills
+            </li>
+          </ul>
+          <p>
+            I've worked extensively with <strong>CI/CD practices</strong>, including version control (Git), automated testing, and deployment pipelines 
+            for efficient, high-quality releases. I create scalable systems with ASP.NET MVC and Entity Framework, integrating complex data exchange 
+            via JSON and XML for seamless system interactions.
+          </p>
+          <div className="about-stats">
+            <div className="stat-item">
+              <div className="stat-number">5+</div>
+              <div className="stat-label">Years Experience</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">500+</div>
+              <div className="stat-label">Active Profiles</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">3+</div>
+              <div className="stat-label">Live Projects</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">100%</div>
+              <div className="stat-label">Self-Learner</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

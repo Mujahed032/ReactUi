@@ -50,7 +50,7 @@ const Header = () => {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <nav className="nav-container">
           <div className="logo" onClick={() => scrollToSection('hero')}>
-            <span>Mujahed</span>
+            <span>Md Mujahed Ul Islam</span>
           </div>
           <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
             <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
@@ -60,11 +60,11 @@ const Header = () => {
             </span>
           </button>
           <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+            <li><a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
             <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
-            <li><a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a></li>
             <li><a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a></li>
-            <li><a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a></li>
             <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a></li>
+            <li><a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a></li>
             <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
           </ul>
         </nav>

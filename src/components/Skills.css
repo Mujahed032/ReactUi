@@ -46,8 +46,8 @@
 
 .skill-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
-  border-color: #667eea;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
 }
 
 @media (max-width: 768px) {

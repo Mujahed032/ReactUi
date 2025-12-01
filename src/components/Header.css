@@ -35,7 +35,7 @@
 }
 
 .logo:hover {
-  color: #3498db;
+  color: #3b82f6;
 }
 
 .menu-toggle {
@@ -94,7 +94,7 @@
 }
 
 .nav-menu li a:hover {
-  color: #3498db;
+  color: #3b82f6;
 }
 
 .nav-menu li a::after {

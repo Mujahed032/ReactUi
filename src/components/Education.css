@@ -28,7 +28,7 @@
 .education-institution {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #667eea;
+  color: #3b82f6;
 }
 
 .education-meta {
@@ -62,7 +62,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #667eea;
+  color: #3b82f6;
   font-weight: bold;
 }
 
